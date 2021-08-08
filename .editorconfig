@@ -10,6 +10,11 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 end_of_line = lf
 charset = utf-8
+# The following styles are not officially supported by EditorConfig, however
+# they are specified for a better understanding of the style of this project:
+indent_brace_style = Allman
+curly_bracket_next_line = true
+spaces_around_operators = true
 
 # Markdown uses whitespace at the end of a line to force line breaking
 [*.{md,mdx,markdown,txt}]
