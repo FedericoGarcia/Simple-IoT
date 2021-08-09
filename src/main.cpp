@@ -19,9 +19,13 @@
 
 #include <Arduino.h>
 
+#include "simpleiot/debug/debug.hpp"
+#include "simpleiot/core/core.hpp"
+
 void setup()
 {
-
+    simple_iot::debug::Init();
+    simple_iot::debug::Log("Firmware version: " + simple_iot::core::GetFirmwareVersion());
 }
 
 void loop()
